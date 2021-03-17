@@ -12,7 +12,7 @@ public class Assets extends AssetManager {
     public static Animation<TextureRegion> carta;
 
     public void load(){
-        load("invaders.atlas", TextureAtlas.class);
+        load("miatles.atlas", TextureAtlas.class);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class Assets extends AssetManager {
         boolean update = super.update();
 
         if(update){
-            atlas = get("invaders.atlas", TextureAtlas.class);
+            atlas = get("miatles.atlas", TextureAtlas.class);
 
             loadAnimations();
         }
@@ -28,7 +28,7 @@ public class Assets extends AssetManager {
     }
 
     void loadAnimations(){
-        carta = new Animation<TextureRegion>(0.1f, atlas.findRegions("aliendie"));
+        carta = new Animation<TextureRegion>(0.1f, atlas.findRegions("kid"));
 
     }
 }
